@@ -43,6 +43,10 @@ grab_files(
         "03_10_EmpOrg.csv",
         "03_11_POS.csv",
         "03_11a_POS_RoleTable.csv",
+        "03_16_CIRS_Incidents.csv",
+        "03_17_CIRS_Offenders.csv",
+        "03_18_CIRS_Actions.csv",
+        "03_19_CIRS_Victims.csv",
     ]
 )
 
@@ -161,6 +165,10 @@ student_file_list = [
     "03_10_EmpOrg.csv",
     "03_11_POS.csv",
     "03_11a_POS_RoleTable.csv",
+    "03_16_CIRS_Incidents.csv",
+    "03_17_CIRS_Offenders.csv",
+    "03_18_CIRS_Actions.csv",
+    "03_19_CIRS_Victims.csv",
 ]
 
 slds_file_upload(1, student_file_list, state_reports)
