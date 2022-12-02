@@ -32,11 +32,17 @@ print(temp_timestamp)
 
 grab_files(
     [
-        "03_4_PS_Enroll.csv",
+        "03_0_Staff_Identity.csv",
         "03_0_Student_Identity.csv",
+        "03_4_PS_Enroll.csv",
         "03_5_PS_GradeProg.csv",
         "03_6_PS_ADM.csv",
         "03_7_PS_Att.csv",
+        "03_8_OrgProfile.csv",
+        "03_8a_OrgProfile_Holidays.csv",
+        "03_10_EmpOrg.csv",
+        "03_11_POS.csv",
+        "03_11a_POS_RoleTable.csv",
     ]
 )
 
@@ -129,7 +135,7 @@ def slds_file_upload(cycles, file_list, dir_info):
         browser.find_element("id", "ctl00_MainContent_rdFileUploadfile0").send_keys(
             file_upload_string
         )
-        time.sleep(3)
+        time.sleep(10)
 
         # click upload button
         browser.find_element("id", "ctl00_MainContent_imgbtnUpload").click()
@@ -144,11 +150,17 @@ def slds_file_upload(cycles, file_list, dir_info):
 # old_student_file_list = ["03_0_Student_Identity.csv","03_4_PS_Enroll.csv","03_5_PS_GradeProg.csv"]
 
 student_file_list = [
-    "03_4_PS_Enroll.csv",
+    "03_0_Staff_Identity.csv",
     "03_0_Student_Identity.csv",
+    "03_4_PS_Enroll.csv",
     "03_5_PS_GradeProg.csv",
     "03_6_PS_ADM.csv",
     "03_7_PS_Att.csv",
+    "03_8_OrgProfile.csv",
+    "03_8a_OrgProfile_Holidays.csv",
+    "03_10_EmpOrg.csv",
+    "03_11_POS.csv",
+    "03_11a_POS_RoleTable.csv",
 ]
 
 slds_file_upload(1, student_file_list, state_reports)
