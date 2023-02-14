@@ -143,7 +143,7 @@ def slds_file_upload(cycles, file_list, dir_info):
         browser.find_element("id", "ctl00_MainContent_rdFileUploadfile0").send_keys(
             file_upload_string
         )
-        time.sleep(10)
+        time.sleep(30)
 
         # click upload button
         browser.find_element("id", "ctl00_MainContent_imgbtnUpload").click()
